@@ -1,0 +1,147 @@
+.toast {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.04);
+    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    z-index: 2000;
+    min-width: 320px;
+    max-width: 450px;
+}
+
+.message {
+    margin: 0;
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.closeBtn:hover {
+    opacity: 1;
+}
+
+/* Colors based on type */
+.success {
+    background-color: var(--light-green-bg);
+    color: var(--success-green);
+    border: 1px solid var(--success-green);
+}
+
+.error {
+    background-color: var(--light-red-bg);
+    color: var(--error-red);
+    border: 1px solid var(--error-red);
+}
+
+.warning {
+    background-color: var(--light-orange-bg);
+    color: var(--warning-orange);
+    border: 1px solid var(--warning-orange);
+}
+
+.info {
+    background-color: var(--light-blue-bg);
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 280px;
+  z-index: 9999;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.message {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 16px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.closeBtn:hover {
+  opacity: 1;
+}
+
+/* Types */
+.success {
+  background-color: #E2EFDA;
+  color: #1E6B3C;
+  border-color: #1E6B3C;
+}
+
+.error {
+  background-color: #FFEBEB;
+  color: #C00000;
+  border-color: #C00000;
+}
+
+.info {
+  background-color: #D6E4F7;
+  color: #1E4D9B;
+  border-color: #1E4D9B;
+}
+
+.warning {
+  background-color: #FCE4D6;
+  color: #C55A11;
+  border-color: #C55A11;
+}

@@ -1,0 +1,107 @@
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroBanner {
+    color: var(--dark-text);
+    padding: 64px 24px;
+}
+
+.heroContent {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.heroTitle {
+    font-size: 36px;
+    margin: 0 0 12px 0;
+    text-transform: capitalize;
+}
+
+.heroDesc {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0 0 16px 0;
+    max-width: 600px;
+}
+
+.heroCount {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin: 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+}
+
+.mainLayout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 32px 24px;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .mainLayout {
+        flex-direction: row;
+    }
+}
+
+.sidebar {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 260px;
+        flex-shrink: 0;
+    }
+}
+
+.contentArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.subcategoryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.subTile {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-blue);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.subTile:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 4px 12px rgba(30, 77, 155, 0.1);
+    transform: translateY(-2px);
+}
+
+.resultsHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.gridWrapper {
+    margin-bottom: 48px;
+}

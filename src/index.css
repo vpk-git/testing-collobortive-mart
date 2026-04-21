@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Syne:wght@700;800&display=swap');
+@import "tailwindcss";
+
+/* Global Premium Light Theme */
+:root {
+  --primary-blue: #1E4D9B;
+  --dark-text: #111827;
+  --secondary-text: #6B7280;
+  --border: #E5E7EB;
+  --white: #FFFFFF;
+  --accent-blue: #163A7A;
+  --light-gray-bg: #F8F9FC;
+}
+
+body {
+  background-color: #F8F9FC;
+  /* Light modern background */
+  color: #111827;
+  /* Dark text */
+  font-family: 'DM Sans', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Syne', system-ui, sans-serif;
+  color: #111827;
+}
+
+/* Base link transitions */
+a,
+button {
+  transition: all 0.2s ease;
+}

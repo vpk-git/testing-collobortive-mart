@@ -1,0 +1,209 @@
+.panel {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.clearBtn {
+    background: none;
+    border: none;
+    color: var(--accent-blue);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.clearBtn:hover {
+    color: var(--primary-blue);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sectionTitle {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark-text);
+}
+
+.select,
+.input {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: var(--dark-text);
+    width: 100%;
+    outline: none;
+}
+
+.select:focus,
+.input:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}
+
+.priceInputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.separator {
+    color: var(--secondary-text);
+}
+
+.ratingControl {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ratingText {
+    font-size: 13px;
+    color: var(--secondary-text);
+}
+
+.checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--dark-text);
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary-blue);
+}
+
+.applyBtn {
+    margin-top: 8px;
+    width: 100%;
+}
+.panel {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+}
+
+.header {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1E4D9B;
+  border-bottom: 2px solid #D6E4F7;
+  padding-bottom: 8px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+
+.priceInputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputGroup {
+  position: relative;
+  flex: 1;
+}
+
+.currencyIcon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #595959;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 8px 8px 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2D2D2D;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #2E75B6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}
+
+.separator {
+  color: #595959;
+}
+
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #1E4D9B;
+}
+
+.checkboxText {
+  font-size: 14px;
+  color: #2D2D2D;
+}
+
+.checkboxLabel:hover .checkboxText {
+  color: #1E4D9B;
+}

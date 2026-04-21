@@ -1,0 +1,100 @@
+.searchForm {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0 12px;
+    transition: all 0.2s ease;
+    width: 100%;
+    max-width: 600px;
+}
+
+.searchForm:focus-within {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}
+
+.searchIcon {
+    color: var(--secondary-text);
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.input {
+    border: none;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--dark-text);
+    width: 100%;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--secondary-text);
+}
+
+.clearBtn {
+    background: none;
+    border: none;
+    color: var(--secondary-text);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.clearBtn:hover {
+    color: var(--dark-text);
+}.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  color: #595959;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px 36px 10px 36px;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2D2D2D;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input:focus {
+  border-color: #2E75B6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}
+
+.clearBtn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #595959;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.clearBtn:hover {
+  color: #2D2D2D;
+}

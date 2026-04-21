@@ -1,0 +1,164 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.emptyGallery {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--light-gray-bg);
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text);
+}
+
+.emptyIcon {
+    font-size: 48px;
+    margin-bottom: 8px;
+    opacity: 0.5;
+}
+
+.mainImageContainer {
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* ensures whole product is seen */
+    transition: opacity 0.3s ease;
+}
+
+.thumbnailContainer {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+}
+
+.thumbnailBtn {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    background-color: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.thumbnailBtn:hover {
+    border-color: var(--mid-blue);
+}
+
+.thumbnailBtn.active {
+    border-color: var(--primary-blue);
+}
+
+.thumbnailImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.emptyGallery {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #F4F6FB;
+  border: 1px dashed #CCCCCC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyText {
+  color: #595959;
+  font-size: 14px;
+}
+
+.mainImageContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumbnailStrip {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+}
+
+.thumbnailStrip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnailStrip::-webkit-scrollbar-thumb {
+  background-color: #CCCCCC;
+  border-radius: 4px;
+}
+
+.thumbnailBtn {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  padding: 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.thumbnailBtn:hover {
+  border-color: #2E75B6;
+}
+
+.activeThumb {
+  border: 2px solid #1E4D9B;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,124 @@
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchHeaderSection {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+}
+
+.headerContent {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.searchBoxWrapper {
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.resultsTitle {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    color: var(--dark-text);
+    font-weight: normal;
+}
+
+.queryHighlight {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.resultCount {
+    font-size: 14px;
+    color: var(--secondary-text);
+    margin: 0;
+}
+
+.mainLayout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 32px 24px;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .mainLayout {
+        flex-direction: row;
+    }
+}
+
+.sidebar {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 260px;
+        flex-shrink: 0;
+    }
+}
+
+.contentArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultsHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.sortWrapper {
+    flex-shrink: 0;
+}
+
+.gridWrapper {
+    margin-bottom: 48px;
+}
+
+.suggestionsBox {
+    background-color: var(--light-blue-bg);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border: 1px solid var(--primary-blue);
+}
+
+.suggestionsBox p {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin: 0 0 12px 0;
+}
+
+.suggestionTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.suggestionTag {
+    background-color: var(--white);
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.suggestionTag:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}

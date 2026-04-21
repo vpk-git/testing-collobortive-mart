@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star {
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star.readOnly {
+  cursor: default;
+}
+
+.filled {
+  color: #C55A11; /* Warning Orange used for stars based on palette */
+}
+
+.empty {
+  color: #CCCCCC; /* Border color used for empty stars */
+}
+.container {
+    display: inline-flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.star {
+    font-size: 18px;
+    line-height: 1;
+    color: var(--border);
+    /* empty default */
+    transition: color 0.2s;
+}
+
+.filled {
+    color: #FFC107;
+    /* Standard gold star color */
+}
+
+.half {
+    color: #FFC107;
+    /* Not perfect CSS clip-path for half star but works as approximation */
+    opacity: 0.6;
+}
+
+.interactive .star {
+    cursor: pointer;
+}
+
+.interactive .star:hover {
+    transform: scale(1.1);
+}

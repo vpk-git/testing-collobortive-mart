@@ -1,0 +1,43 @@
+.base {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    box-shadow: none;
+}
+
+.base:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.primary:hover:not(:disabled) {
+    filter: brightness(0.9);
+}
+
+.secondary {
+    background-color: var(--white);
+    border: 1.5px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.secondary:hover:not(:disabled) {
+    background-color: var(--light-gray-bg);
+}
+
+.danger {
+    background-color: var(--error-red);
+    color: var(--white);
+}
+
+.danger:hover:not(:disabled) {
+    filter: brightness(0.9);
+}

@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.label {
+    font-size: 13px;
+    color: var(--secondary-text);
+    font-weight: bold;
+}
+
+.select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: var(--dark-text);
+    background-color: var(--white);
+    cursor: pointer;
+    outline: none;
+    min-width: 160px;
+}
+
+.select:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  color: #595959;
+  white-space: nowrap;
+}
+
+.select {
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #CCCCCC;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #2D2D2D;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23595959' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+}
+
+.select:focus {
+  border-color: #2E75B6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(46, 117, 182, 0.15);
+}

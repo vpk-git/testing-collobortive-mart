@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuildaMart</title>
+
+  <!--
+      SPRINT 3 ADDITION: Leaflet.js for the map on the Checkout page.
+      Leaflet is an open-source map library that uses free OpenStreetMap tiles.
+      No API key, no billing.
+
+      We load it here in index.html so it's available globally as window.L
+      when Checkout.jsx needs it. Checkout.jsx loads it dynamically as a
+      fallback if it's not already here, but it's cleaner to have it pre-loaded.
+    -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLs=" crossorigin=""></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
